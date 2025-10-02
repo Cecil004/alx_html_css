@@ -86,7 +86,7 @@ main section:first-of-type button:hover {
   background-color: #a85de3; /* Darker purple */
 }
 
-/* Learn from the pros section */
+/* Learn from the pros section (2nd) */
 main section:nth-of-type(2) {
   padding: 80px 20px;
   text-align: center;
@@ -102,8 +102,9 @@ main section:nth-of-type(2) > div {
   display: flex;
   justify-content: center;
   gap: 40px;
+}
 
-/* === Quotes Section === */
+/* === Quotes Section (3rd) === */
 main section:nth-of-type(3) {
   display: flex;
   justify-content: center;
@@ -137,5 +138,83 @@ main section:nth-of-type(3) h3 {
 main section:nth-of-type(3) p {
   font-size: 16px;
   opacity: 0.9;
+}
+
+/* === Videos list section (4th) === */
+main section:nth-of-type(4) {
+  padding: 60px 20px;
+}
+
+main section:nth-of-type(4) h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Container for video cards */
+main section:nth-of-type(4) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual video card */
+main section:nth-of-type(4) > div {
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+/* Video thumbnails */
+main section:nth-of-type(4) > div > img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Video title */
+main section:nth-of-type(4) h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #c271ff; /* purple text */
+}
+
+/* Video description */
+main section:nth-of-type(4) p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Author area */
+main section:nth-of-type(4) > div > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+main section:nth-of-type(4) > div > div img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Stars row */
+main section:nth-of-type(4) > div:nth-child(n) > div:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.fa-star {
+  color: #c271ff; /* purple stars */
 }
 
