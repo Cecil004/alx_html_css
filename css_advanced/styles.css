@@ -323,3 +323,42 @@ main section:nth-of-type(6) div > div {
   line-height: 1.6;
 }
 
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer img {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+footer div {
+  display: flex;
+  gap: 20px;
+}
+
+footer div i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+footer div i:hover {
+  color: #c271ff;
+}
+
+footer p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
