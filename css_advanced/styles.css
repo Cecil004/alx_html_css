@@ -218,3 +218,70 @@ main section:nth-of-type(4) > div:nth-child(n) > div:nth-of-type(2) {
   color: #c271ff; /* purple stars */
 }
 
+/* === Membership Section === */
+main section:nth-of-type(5) {
+  background-color: #071629; /* dark background */
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+main section:nth-of-type(5) h2 {
+  font-size: 36px;
+  margin-bottom: 60px;
+  color: white;
+}
+
+/* Membership cards container */
+main section:nth-of-type(5) > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+/* Individual card */
+main section:nth-of-type(5) > div > div {
+  width: 220px;
+  text-align: center;
+}
+
+main section:nth-of-type(5) img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+main section:nth-of-type(5) h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+main section:nth-of-type(5) p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.5;
+}
+
+/* Register button */
+main section:nth-of-type(5) button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 36px;
+  background-color: #c271ff; /* purple */
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+main section:nth-of-type(5) button:hover {
+  background-color: #a85de3;
+}
+
+
