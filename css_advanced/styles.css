@@ -1,0 +1,105 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header (nav bar) */
+header {
+  background-color: #fff;
+  padding: 20px 60px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav img {
+  height: 50px; /* Logo size */
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #c271ff; /* Hover effect */
+}
+
+/* Banner (first section under header) */
+main section:first-of-type {
+  background: url('images/banner.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+main section:first-of-type h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main section:first-of-type span {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+main section:first-of-type button {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 14px 32px;
+  background-color: #c271ff; /* Purple button */
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+main section:first-of-type button:hover {
+  background-color: #a85de3; /* Darker purple */
+}
+
+/* Learn from the pros section */
+main section:nth-of-type(2) {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+main section:nth-of-type(2) h2 {
+  font-size: 38px;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+main section:nth-of-type(2) > div {
+  display: flex;
+  justify-co
+
+
