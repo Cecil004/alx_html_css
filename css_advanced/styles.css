@@ -1,0 +1,364 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header (nav bar) */
+header {
+  background-color: #fff;
+  padding: 20px 60px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav img {
+  height: 50px; /* Logo size */
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #c271ff; /* Hover effect */
+}
+
+/* Banner (first section under header) */
+main section:first-of-type {
+  background: url('images/banner.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+main section:first-of-type h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main section:first-of-type span {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+main section:first-of-type button {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 14px 32px;
+  background-color: #c271ff; /* Purple button */
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+main section:first-of-type button:hover {
+  background-color: #a85de3; /* Darker purple */
+}
+
+/* Learn from the pros section (2nd) */
+main section:nth-of-type(2) {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+main section:nth-of-type(2) h2 {
+  font-size: 38px;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+main section:nth-of-type(2) > div {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* === Quotes Section (3rd) === */
+main section:nth-of-type(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: #c271ff; /* purple background */
+  color: white;
+  padding: 80px 20px;
+}
+
+main section:nth-of-type(3) img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+main section:nth-of-type(3) blockquote {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+main section:nth-of-type(3) h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+main section:nth-of-type(3) p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* === Videos list section (4th) === */
+main section:nth-of-type(4) {
+  padding: 60px 20px;
+}
+
+main section:nth-of-type(4) h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Container for video cards */
+main section:nth-of-type(4) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual video card */
+main section:nth-of-type(4) > div {
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+/* Video thumbnails */
+main section:nth-of-type(4) > div > img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Video title */
+main section:nth-of-type(4) h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #c271ff; /* purple text */
+}
+
+/* Video description */
+main section:nth-of-type(4) p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Author area */
+main section:nth-of-type(4) > div > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+main section:nth-of-type(4) > div > div img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Stars row */
+main section:nth-of-type(4) > div:nth-child(n) > div:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.fa-star {
+  color: #c271ff; /* purple stars */
+}
+
+/* === Membership Section === */
+main section:nth-of-type(5) {
+  background-color: #071629; /* dark background */
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+main section:nth-of-type(5) h2 {
+  font-size: 36px;
+  margin-bottom: 60px;
+  color: white;
+}
+
+/* Membership cards container */
+main section:nth-of-type(5) > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+/* Individual card */
+main section:nth-of-type(5) > div > div {
+  width: 220px;
+  text-align: center;
+}
+
+main section:nth-of-type(5) img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+main section:nth-of-type(5) h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+main section:nth-of-type(5) p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.5;
+}
+
+/* Register button */
+main section:nth-of-type(5) button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 36px;
+  background-color: #c271ff; /* purple */
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+main section:nth-of-type(5) button:hover {
+  background-color: #a85de3;
+}
+
+/* === FAQ Section === */
+main section:nth-of-type(6) {
+  padding: 80px 20px;
+  background: #fff;
+  color: #333;
+}
+
+main section:nth-of-type(6) h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+/* FAQ layout: 2 columns */
+main section:nth-of-type(6) > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 60px; /* vertical and horizontal spacing */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Question title */
+main section:nth-of-type(6) h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #071629;
+}
+
+/* Answer text */
+main section:nth-of-type(6) p,
+main section:nth-of-type(6) div > div {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer img {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+footer div {
+  display: flex;
+  gap: 20px;
+}
+
+footer div i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+footer div i:hover {
+  color: #c271ff;
+}
+
+footer p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
